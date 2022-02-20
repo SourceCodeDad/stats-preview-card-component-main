@@ -1,0 +1,67 @@
+:root {
+    --mainBackground: hsl(233, 47%, 7%);
+    --cardBackground: hsl(244, 38%, 16%);
+    --accent: hsl(277, 64%, 61%);
+
+    --mainHeadingandStats: hsl(0, 0%, 100%);
+    --mainParagraph: hsla(0, 0%, 100%, 0.75);
+    --statHeadings: hsla(0, 0%, 100%, 0.6);
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--mainBackground);
+    font-size: 14px;
+    color: var(--mainParagraph);
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.cardWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--cardBackground);
+    border-radius: 5px;
+}
+
+.cardText{
+    padding: 1rem;
+}
+
+.top-image {
+  width: 100%;
+  background-color: var(--accent);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+img {
+    width: 100%;
+    mix-blend-mode: multiply;
+}
+
+
+h1 {
+    color: var(--mainHeadingandStats);
+    font-weight: 700;
+}
+
+h1 > strong {
+    color: var(--accent);
+}
+
+p > strong {
+    font-size: 1.3rem;
+    color: var(--mainHeadingandStats);
+    font-weight: 700;
+}
