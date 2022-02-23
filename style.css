@@ -91,11 +91,12 @@ li {
 }
 
 /* START  OF MEDIA QUERIES */
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1000px) {
 
     .main {
         padding-top: 7rem;
         padding-bottom: 5rem;
+        width: 100%;
     }
     
     .cardWrapper{
