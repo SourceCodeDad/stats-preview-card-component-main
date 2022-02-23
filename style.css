@@ -24,11 +24,11 @@ body {
     padding-right: 1rem;
     padding-top: 4rem;
     padding-bottom: 4rem;
+    align-items: center;
 }
 
 .main {
     display: flex;
-    align-items: center;
 }
 
 .cardWrapper {
@@ -97,11 +97,11 @@ li {
         padding-top: 7rem;
         padding-bottom: 5rem;
         width: 100%;
+        justify-content: center;
     }
     
     .cardWrapper{
         flex-direction: row;
-        order: 1 0;
     }
 
     .top-image {
