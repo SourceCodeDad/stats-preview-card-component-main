@@ -26,12 +26,17 @@ body {
     padding-bottom: 4rem;
 }
 
+.main {
+    display: flex;
+    align-items: center;
+}
+
 .cardWrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: var(--cardBackground);
-    border-radius: 5px;
+    border-radius: .5rem;
 }
 
 .cardText{
@@ -40,13 +45,16 @@ body {
 
 .top-image {
   width: 100%;
+  height: 100%;
   background-color: var(--accent);
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
 }
 
 img {
+    display: block;
     width: 100%;
+    height: auto;
     mix-blend-mode: multiply;
 }
 
@@ -54,14 +62,77 @@ img {
 h1 {
     color: var(--mainHeadingandStats);
     font-weight: 700;
+    margin-bottom: 1.5rem;
 }
 
 h1 > strong {
     color: var(--accent);
 }
 
-p > strong {
-    font-size: 1.3rem;
+p {
+    margin-bottom: 1.5rem;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 1rem;
+    font-size: .7rem;
+}
+
+.stat-heading {
     color: var(--mainHeadingandStats);
-    font-weight: 700;
+    font-size: 1.4rem;
+    font-weight: bolder;
+    margin-bottom: .3rem;
+}
+
+/* START  OF MEDIA QUERIES */
+@media screen and (min-width: 900px) {
+
+    .main {
+        padding-top: 7rem;
+        padding-bottom: 5rem;
+    }
+    
+    .cardWrapper{
+        flex-direction: row;
+        order: 1 0;
+    }
+
+    .top-image {
+        order: 2;
+        border-top-left-radius: 0;
+        border-bottom-right-radius: .5rem;
+    }
+
+    .cardText {
+        text-align: left;
+    }
+
+    img {
+        border-top-left-radius: 0;
+        border-bottom-right-radius: .5rem;
+    }
+
+    h1, p {
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+
+    p {
+        margin-bottom: 4rem;
+    }
+
+    .stats {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+
+
 }
